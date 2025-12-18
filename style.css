@@ -1,0 +1,46 @@
+@import "tailwindcss";
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+main a[href]:not(.card) {
+   @apply underline text-teal-800 hover:text-teal-900 transition-colors;
+}
+
+footer a[href] {
+   @apply underline
+}
+
+.sr-only {
+   position: absolute;
+   width: 1px;
+   height: 1px;
+   padding: 0;
+   margin: -1px;
+   overflow: hidden;
+   clip: rect(0, 0, 0, 0);
+   white-space: nowrap;
+   border-width: 0;
+}
+
+body[data-nav-open="true"] {
+   overflow: hidden;
+}
+
+body[data-nav-open="true"] main,
+body[data-nav-open="true"] footer {
+   visibility: hidden;
+}
+
+@media (min-width: 768px) {
+   body[data-nav-open="true"] {
+      overflow: auto;
+   }
+
+   body[data-nav-open="true"] main,
+   body[data-nav-open="true"] footer {
+      visibility: visible;
+   }
+}
