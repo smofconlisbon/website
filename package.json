@@ -5,6 +5,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "build:s3": "vite build && node scripts/s3-structure.js",
     "preview": "vite preview"
   },
   "keywords": [],

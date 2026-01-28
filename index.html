@@ -1,14 +1,348 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="SMOFcon 43 - A convention for people who run science fiction, fantasy, and horror conventions. December 4-6, 2026 in Lisbon, Portugal." />
-    <title>SMOFcon 43</title>
-  </head>
-  <body>
-    <h1 class="text-4xl text-center mt-12">SMOFcon 43</h1>
-    <p class="text-center">Coming soon</p>
-    <script type="module" src="/main.js"></script>
-  </body>
-</html>
+{{#> layout showHeader=true}}
+  {{#> section title="What is SMOFcon?"}}
+    <p>
+      SMOFcon is a convention for people who run conventions, or would like to
+      do so. Most of us run conventions focussed on science fiction, fantasy,
+      horror, and the fantastic as considered from many different angles.
+    </p>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-6 pt-6">
+      {{#> feature-card img="/assets/workshops.svg" title="Workshops" }}
+        We'll have a heavy focus on workshops and other participatory items. The
+        goal is to help develop practical skills that you can take away and use
+        when running your conventions.
+      {{/feature-card}}
+      {{#> feature-card img="/assets/panels-and-talks.svg" title="Panels and talks" }}
+        Panels and talks are a great way for people to share their experience,
+        and compare and contrast different viewpoints on the same topic.
+      {{/feature-card}}
+      {{#> feature-card img="/assets/socialising.svg" title="Socialising" }}
+        SMOFcons are a great opportunity to network with other convention
+        runners and make connections. But it's not all business, SMOFcon is also
+        for making and catching up with lifelong friends.
+      {{/feature-card}}
+    </div>
+  {{/section}}
+  <section
+    id="venue"
+    class="max-w-6xl mx-auto px-6 pt-12 grid grid-cols-1 md:grid-cols-2 gap-x-6 md:grid-rows-[auto_1fr]"
+  >
+    <h2 class="text-2xl leading-none mb-3">VIP Executive Art's Hotel</h2>
+    <picture class="rounded-md shadow-md mb-6 md:mb-0 md:col-start-2 md:row-start-1 md:row-end-3 md:self-start">
+      <source srcset="/assets/hotel.avif" type="image/avif" />
+      <source srcset="/assets/hotel.webp" type="image/webp" />
+      <img
+        class="rounded-md shadow-md aspect-[540/357]"
+        src="/assets/hotel.png"
+        alt="Modern lobby with egg-shaped chairs, black sofas on a red carpet, and a vibrant abstract painting. Glass wall and stairs create an open, stylish atmosphere."
+        width="540"
+        height="357"
+      />
+    </picture>
+    <div class="md:col-start-1 md:row-start-2 flex flex-col gap-2">
+      <p>
+        This year the convention will be in the VIP Executive Art&apos;s
+        Hotel. It is located in &ldquo;Parque das Nações&rdquo;, Lisbon,
+        Portugal, close to the waterfront. This is the same hotel that the
+        SMOFcon 39 convention was held at in 2021.
+      </p>
+      <p>
+        Room bookings will open shortly. We will e-mail members when they are
+        available.
+      </p>
+      <p>
+        It is just 3.2km from the
+        <a href="https://www.lisbonairport.pt/en/lis/home" target="_blank"
+          >Humberto Delgado Airport (LIS)</a
+        >
+        - a major international airport - and 7km from the historical city
+        centre of Lisbon.
+      </p>
+      <p>
+        The hotel will serve both as function space and as the official
+        convention hotel. We will have a block of rooms available to book
+        shortly, and there are also several other hotel options nearby.
+      </p>
+    </div>
+  </section>
+  {{#> section title="Programme" name="programme" class="bg-yellow-300 mt-12"}}
+    <p>
+      We want to deliver a programme focussed on audience participation.
+      We believe that SMOFcon provides a unique opportunity for us to
+      learn from each other, and that items such as workshops and
+      roundtables are a great way to facilitate that. However, we&apos;ll
+      still have a mix of panels and talks, as well as the Future Worldcons
+      Q&amp;A.
+    </p>
+    <ul class="list-disc list-inside">
+      <li>Workshops</li>
+      <li>Roundtables</li>
+      <li>Panels</li>
+      <li>Talks</li>
+      <li>Mixers</li>
+      <li>Parties</li>
+      <li>Future Worldcons Q&amp;A</li>
+    </ul>
+    <p>
+      We really want this SMOFcon to be about what
+      <em class="text-italic">you</em> want and might need from a convention
+      about convention running! If you have suggestions for items, either
+      topics or interesting new structures beyond the traditional panels and
+      talks, please fill in our programme suggestions form.
+    </p>
+    <p class="mt-4">
+      {{> cta-button href="https://example.com" label="Programme suggestion form"}}
+    </p>
+    <h2 class="text-2xl leading-none mt-12 mb-3">Online</h2>
+    <p>
+      We aim to make as much of the convention available to people via the
+      Internet as possible. In order to do this, we need to plan carefully
+      in advance and are currently discussing our options with both our team
+      and with the venue. We will update this section as each virtual
+      commitment is confirmed.
+    </p>
+    <ul class="grid grid-rows-2 mt-3 gap-2">
+      <li class="flex gap-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 16 16"
+          class="h-[3em] w-auto flex-shrink-0 drop-shadow-md"
+          aria-hidden="true"
+        >
+          <path
+            fill="var(--color-white)"
+            d="M13.545 2.907a13.2 13.2 0 0 0-3.257-1.011.05.05 0 0 0-.052.025c-.141.25-.297.577-.406.833a12.2 12.2 0 0 0-3.658 0 8 8 0 0 0-.412-.833.05.05 0 0 0-.052-.025c-1.125.194-2.22.534-3.257 1.011a.04.04 0 0 0-.021.018C.356 6.024-.213 9.047.066 12.032q.003.022.021.037a13.3 13.3 0 0 0 3.995 2.02.05.05 0 0 0 .056-.019q.463-.63.818-1.329a.05.05 0 0 0-.01-.059l-.018-.011a9 9 0 0 1-1.248-.595.05.05 0 0 1-.02-.066l.015-.019q.127-.095.248-.195a.05.05 0 0 1 .051-.007c2.619 1.196 5.454 1.196 8.041 0a.05.05 0 0 1 .053.007q.121.1.248.195a.05.05 0 0 1-.004.085 8 8 0 0 1-1.249.594.05.05 0 0 0-.03.03.05.05 0 0 0 .003.041c.24.465.515.909.817 1.329a.05.05 0 0 0 .056.019 13.2 13.2 0 0 0 4.001-2.02.05.05 0 0 0 .021-.037c.334-3.451-.559-6.449-2.366-9.106a.03.03 0 0 0-.02-.019m-8.198 7.307c-.789 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.45.73 1.438 1.613 0 .888-.637 1.612-1.438 1.612m5.316 0c-.788 0-1.438-.724-1.438-1.612s.637-1.613 1.438-1.613c.807 0 1.451.73 1.438 1.613 0 .888-.631 1.612-1.438 1.612"
+          />
+        </svg>
+        <div>
+          <h3 class="font-bold">Discord</h3>
+          <p>
+            We will have a Discord server where people, both in person and
+            remote, can discuss programme items.
+          </p>
+        </div>
+      </li>
+      <li class="flex gap-2">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+          viewBox="0 200 841.9 841.9"
+          class="h-[3em] w-auto flex-shrink-0 drop-shadow-md"
+          aria-hidden="true">
+            <path fill="var(--color-white)" d="M252.7,318.4c-138.9,0-251.5,84-251.5,187.6c0,59.3,36.9,112.2,94.5,146.6L242,766v-72.6c3.5,0.1,7.1,0.2,10.6,0.2     c24.5,0,48.2-2.6,70.6-7.5c-0.1-0.8-0.2-1.5-0.3-2.3c-0.8-6.5-1.2-13.2-1.2-19.8c0-43.2,17.4-84.3,50.3-119.1     c31.4-33.1,74.5-58.1,124.8-72.1c1.1-0.3,2.1-0.6,3.2-0.9C478.5,384.6,376,318.4,252.7,318.4z M272.3,603.5h-46.2v-45.4h46.2     V603.5z M316.7,464.4c-1.2,4.3-2.8,8.2-5,11.8c-2.2,3.5-4.7,6.8-7.6,9.7c-3,3-6.2,5.7-9.7,8.2c-3.5,2.8-6.9,5.3-10,7.7     c-3.1,2.4-5.8,4.8-8,7.4c-2.2,2.5-3.9,5.4-5.2,8.5c-1.3,3.1-1.9,6.9-1.9,11.2v7.2H229v-7.2c0-10.6,1.8-19.9,5.4-28     c3.6-8.1,9.6-15.1,17.8-21.2c3-2.2,5.8-4.3,8.5-6.3c2.8-2.1,5.3-4.2,7.5-6.3c2.3-2.2,4.1-4.5,5.5-6.9c1.4-2.5,2.1-5.1,2.1-8.1     c0-6.1-2.5-10.7-7.4-13.7c-4.9-3-10.5-4.6-16.8-4.6c-4.5,0-8.7,0.6-12.7,1.8c-3.9,1.2-7.5,2.7-10.8,4.6c-3.2,1.9-6.2,3.8-8.8,5.9     c-2.6,2.1-4.9,4-6.6,5.8l-25.9-27.4c2.6-2.9,5.9-6.1,10-9.6c4.1-3.4,9-6.6,14.6-9.6c5.6-2.9,12-5.4,19.1-7.4     c7.2-2,15.2-2.9,24-2.9c9,0,17.5,1.2,25.3,3.7c7.9,2.5,14.6,6,20.3,10.8c5.7,4.7,10.2,10.5,13.4,17.2c3.2,6.8,4.9,14.4,4.9,22.8     C318.5,455.1,317.9,460.1,316.7,464.4z"/>
+            <path fill="var(--color-white)" d="M589.2,476.4c-31,0-60.7,4.2-88.1,11.8c-95.5,26.6-163.4,95.3-163.4,175.8c0,6,0.4,12,1.1,17.8     c12,95.2,119.5,169.8,250.4,169.8c3.6,0,7.1-0.1,10.6-0.2v71.6l105.5-81.8l14.8-11.5l20.9-16.2c60.6-34.3,99.7-88.5,99.7-149.6     C840.6,560.4,728,476.4,589.2,476.4z M618.2,549.9l-1.9,145.5H569l-1.9-145.5H618.2z M617.8,768.6h-50.8v-49.8h50.8V768.6z"/>
+        </svg>
+        <div>
+          <h3 class="font-bold">Worldcon Q&amp;A</h3>
+          <p>
+            This will be recorded and live-streamed to members. We are
+            working to ensure that teams who need to give online
+            presentations are able to do this effectively.
+          </p>
+        </div>
+      </li>
+    </ul>
+  {{/section}}
+  <picture>
+    <source srcset="/assets/lisbon-wide.avif" type="image/avif" />
+    <source srcset="/assets/lisbon-wide.webp" type="image/webp" />
+    <img
+      src="/assets/lisbon-wide.jpg"
+      alt="Panoramic view of Lisbon's Alfama district at dusk. Warm lights illuminate red-roofed buildings and historic churches."
+      class="w-full aspect-[1920/571]"
+      width="1920"
+      height="571"
+    />
+  </picture>
+  {{#> section name="lisbon" title="Lisbon"}}
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+    <img src="/assets/history.svg" alt="" class="md:col-start-1" width="500" height="500" />
+    <div class="md:col-start-2 md:col-span-2 flex flex-col gap-2">
+      <h3 class="font-bold md:col-span-3">History</h3>
+      <p>
+        Lisbon is one of the oldest cities in the world, and the
+        second-oldest European capital city.
+      </p>
+      <p>
+        Lisbon&apos;s historical sights offer a journey through Portugal's
+        rich past, with must-sees including the majestic
+        <a
+          href="https://en.wikipedia.org/wiki/Jer%C3%B3nimos_Monastery"
+          target="_blank"
+          >Jerónimos Monastery</a
+        >
+        and
+        <a
+          href="https://en.wikipedia.org/wiki/Bel%C3%A9m_Tower"
+          target="_blank"
+          >Belém Tower</a
+        >, the ancient medieval
+        <a
+          href="https://en.wikipedia.org/wiki/S%C3%A3o_Jorge_Castle"
+          target="_blank"
+          >São Jorge Castle</a
+        >, the grand
+        <a
+          href="https://en.wikipedia.org/wiki/Pra%C3%A7a_do_Com%C3%A9rcio"
+          target="_blank"
+          >Praça do Comércio</a
+        >, the historic
+        <a href="https://en.wikipedia.org/wiki/Alfama" target="_blank"
+          >Alfama district</a
+        >, and the iconic
+        <a
+          href="https://en.wikipedia.org/wiki/Santa_Justa_Lift"
+          target="_blank"
+          >Santa Justa Lift</a
+        >
+        or riding the famous
+        <a
+          href="https://en.wikipedia.org/wiki/Trams_in_Lisbon"
+          target="_blank"
+          >Tram 28</a
+        >
+        through hilly, winding streets.
+      </p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-6">
+    <img
+      src="/assets/art.svg"
+      alt=""
+      class="md:col-start-3 md:row-start-2"
+      width="500"
+      height="500"
+    />
+    <div class="md:col-start-1 md:col-span-2 md:row-start-2 flex flex-col gap-2">
+      <h3 class="font-bold md:col-span-3">Art and architecture</h3>
+      <p>
+        Lisbon is a vibrant tapestry of art and architecture that reflects
+        centuries of history and cultural exchange. Its streets are adorned
+        with
+        <a href="https://en.wikipedia.org/wiki/Azulejo" target="_blank"
+          >azulejos</a
+        >, the iconic hand-painted ceramic tiles that cover façades,
+        interiors, and public spaces, creating intricate patterns and
+        telling visual stories of the city&apos;s past. Architectural styles
+        range from the
+        <a href="https://en.wikipedia.org/wiki/Manueline" target="_blank"
+          >Manueline</a
+        >, a lavish late Gothic style unique to Portugal with its maritime
+        motifs, to the elegant
+        <a
+          href="https://en.wikipedia.org/wiki/Pombaline_style"
+          target="_blank"
+          >Pombaline buildings</a
+        >
+        that rose after the 1755 earthquake, showcasing early
+        earthquake-resistant designs and neoclassical order.
+      </p>
+      <p>
+        Lisbon&apos;s art scene flourishes in museums, galleries, and street
+        art, where contemporary murals coexist with Renaissance and Baroque
+        masterpieces. The city&apos;s iconic landmarks, such as the
+        <a
+          href="https://en.wikipedia.org/wiki/Bel%C3%A9m_Tower"
+          target="_blank"
+          >Belém Tower</a
+        >,
+        <a
+          href="https://en.wikipedia.org/wiki/Jer%C3%B3nimos_Monastery"
+          target="_blank"
+          >Jerónimos Monastery</a
+        >, and the modernist
+        <a href="https://maat.pt/en" target="_blank">MAAT museum</a>,
+        illustrate a dialogue between tradition and innovation, making
+        Lisbon a living canvas of creativity and historical grandeur.
+      </p>
+    </div>
+  </div>
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+    <img src="/assets/food-and-drink.svg" alt="" class="md:col-start-1" width="500" height="500" />
+    <div class="md:col-start-2 md:col-span-2 flex flex-col gap-2">
+      <h3 class="font-bold md:col-span-3">Food and drink</h3>
+      <p>
+        Lisbon's food scene is famous for seafood like
+        <a href="https://en.wikipedia.org/wiki/Bacalhau" target="_blank"
+          >bacalhau</a
+        >
+        (codfish) and fresh sardines, iconic custard tarts called
+        <a
+          href="https://en.wikipedia.org/wiki/Pastel_de_nata"
+          target="_blank"
+          >Pastel de Nata</a
+        >, hearty soups like
+        <a href="https://en.wikipedia.org/wiki/Caldo_verde" target="_blank"
+          >Caldo Verde</a
+        >,
+        <a href="https://en.wikipedia.org/wiki/Bifana" target="_blank"
+          >garlic-infused pork sandwiches</a
+        >
+        (Bifana), and the sweet cherry liqueur Ginjinha. You'll find
+        traditional tascas, modern Portuguese restaurants, vibrant markets
+        like Time Out Market, and rooftop bars for diverse dining and
+        drinking experiences.
+      </p>
+    </div>
+  </div>
+  {{/section}}
+  {{#> section title="Policies" name="policies"}}
+    <p>All our policies are living documents, designed to ensure a safe, inclusive, and respectful environment for all attendees.</p>
+    <ul class="list-disc list-inside">
+      <li>
+        <a href="{{url "/policies/code-of-conduct"}}">Code of Conduct</a>
+      </li>
+      <li>
+        <a href="{{url "/policies/disease-mitigation"}}">Disease Mitigation</a>
+      </li>
+      <li>
+        <a href="{{url "/policies/privacy-policy"}}">Privacy Policy</a>
+      </li>
+    </ul>
+  {{/section}}
+  {{#> section title="Committee" name="committee" class="bg-yellow-400"}}
+    <ul
+      class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-6"
+    >
+      {{> committee-member img="/assets/avatar.svg" name="Esther MacCallum-Stewart" role="Co-chair"}}
+      {{> committee-member img="/assets/avatar.svg" name="Vincent Docherty" role="Co-chair"}}
+      {{> committee-member img="/assets/avatar.svg" name="Steve Cooper" role="Treasurer"}}
+      {{> committee-member img="/assets/avatar.svg" name="Andrew January"}}
+      {{> committee-member img="/assets/avatar.svg" name="Emily January"}}
+      {{> committee-member img="/assets/avatar.svg" name="James Turner"}}
+      {{> committee-member img="/assets/avatar.svg" name="John Coxon"}}
+      {{> committee-member img="/assets/avatar.svg" name="Meg MacDonald"}}
+      {{> committee-member img="/assets/avatar.svg" name="Radek Polanski"}}
+      {{> committee-member img="/assets/avatar.svg" name="Rogerio Ribeiro" role="Facilities"}}
+      {{> committee-member img="/assets/avatar.svg" name="Tammy Coxen"}}
+      {{> committee-member img="/assets/avatar.svg" name="Vinga"}}
+    </ul>
+  {{/section}}
+  {{#> section title="Memberships" name="memberships" class="bg-gray-200"}}
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+      {{> membership-card price="€85" label="Attending" in_person="true" online="true"}}
+      {{> membership-card price="€35" label="Online" online="true"}}
+      {{> membership-card price="€35" label="Discounted" info="The discounted rate applies to anyone who can't afford the full price." in_person="true" online="true"}}
+      {{> membership-card price="€25" label="I ❤️ Lisbon" info="For people who want to join the socials and bid parties, but will be exploring Lisbon instead of attending the main programme." social_only="true"}}
+    </div>
+    <p>
+      <em>Tickets won&apos;t be available to purchase on the door.</em>
+    </p>
+    <p>
+      <a href="https://register.smofconlisbon.org/members/list" target="_blank">See who is coming</a>
+    </p>
+  {{/section}}
+  {{#> section title="Bursaries" name="bursaries"}}
+    <p>
+      We will be offering bursaries to help cover the cost of membership for
+      those who would otherwise be unable to attend.
+    </p>
+    <p>
+      Applications to apply for a bursary will be opening later in the year.
+    </p>
+    <p>
+      If you would like to help support our bursary fund, please consider
+      donating when you purchase your membership, or via the form below.
+    </p>
+    <p class="mt-4">
+      {{> cta-button href="https://example.com" label="Donate to the bursary fund"}}
+    </p>
+  {{/section}}
+{{/layout}}

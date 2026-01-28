@@ -1,28 +1,24 @@
 @import "tailwindcss";
 
+html {
+  scroll-padding-top: 4.5rem;
+}
+
 img {
   max-width: 100%;
   height: auto;
 }
 
-main a[href]:not(.card) {
-   @apply underline text-teal-800 hover:text-teal-900 transition-colors;
+main a[href]:not(.card):not(.button) {
+   @apply underline text-teal-800 hover:text-teal-950 transition-colors;
 }
 
 footer a[href] {
    @apply underline
 }
 
-.sr-only {
-   position: absolute;
-   width: 1px;
-   height: 1px;
-   padding: 0;
-   margin: -1px;
-   overflow: hidden;
-   clip: rect(0, 0, 0, 0);
-   white-space: nowrap;
-   border-width: 0;
+#site-nav a.nav-active {
+   @apply text-teal-400;
 }
 
 body[data-nav-open="true"] {
@@ -42,5 +38,16 @@ body[data-nav-open="true"] footer {
    body[data-nav-open="true"] main,
    body[data-nav-open="true"] footer {
       visibility: visible;
+   }
+}
+
+@media (prefers-reduced-motion: reduce) {
+   *,
+   *::before,
+   *::after {
+      animation-duration: 0.01ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.01ms !important;
+      scroll-behavior: auto !important;
    }
 }

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="SMOFcon 43 - A convention for people who run science fiction, fantasy, and horror conventions. December 4-6, 2026 in Lisbon, Portugal." />
+    <title>SMOFcon 43</title>
+  </head>
+  <body class="flex flex-col min-h-screen">
+    <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute top-0 left-0 bg-white text-blue-600 p-2 z-100">
+      Skip to main content
+    </a>
+    <nav id="site-nav" class="sticky top-0 left-0 right-0 z-50 p-6 text-white bg-gray-900/95 backdrop-blur-sm">
+      <div class="relative flex max-w-6xl mx-auto px-6 justify-between items-center">
+        <h1 class="text-xl"><a href="{{url "/"}}">SMOFcon 43</a></h1>
+        <input
+          type="checkbox"
+          id="nav-toggle"
+          class="sr-only peer md:hidden"
+        />
+        <label
+          for="nav-toggle"
+          id="nav-toggle-label"
+          role="button"
+          aria-expanded="false"
+          aria-controls="main-nav"
+          class="md:hidden z-50 p-2 -mr-2 text-white hover:bg-white/10 rounded transition-colors cursor-pointer"
+        >
+          <span class="sr-only">Toggle navigation menu</span>
+          <svg
+            class="w-6 h-6 peer-checked:hidden"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+          <svg
+            class="w-6 h-6 hidden peer-checked:block"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </label>
+        <div id="nav-backdrop" class="md:hidden peer-checked:block hidden fixed inset-0 bg-gray-900/95 backdrop-blur-sm z-40" aria-hidden="true"></div>
+        <div id="main-nav" class="md:block peer-checked:block hidden md:relative fixed inset-0 md:bg-transparent md:pt-0 pt-20 z-40 md:pointer-events-auto pointer-events-none">
+          <ul class="flex gap-6 md:flex-row flex-col md:p-0 p-6 md:pointer-events-auto pointer-events-auto">
+            <li><a href="{{url "/#venue"}}" class="hover:underline block py-2 md:py-0 text-lg md:text-base">Venue</a></li>
+            <li><a href="{{url "/#programme"}}" class="hover:underline block py-2 md:py-0 text-lg md:text-base">Programme</a></li>
+            <li><a href="{{url "/#lisbon"}}" class="hover:underline block py-2 md:py-0 text-lg md:text-base">Lisbon</a></li>
+            <li><a href="{{url "/#policies"}}" class="hover:underline block py-2 md:py-0 text-lg md:text-base">Policies</a></li>
+            <li><a href="{{url "/#committee"}}" class="hover:underline block py-2 md:py-0 text-lg md:text-base">Committee</a></li>
+            <li>
+              <a href="{{url "/#memberships"}}" class="hover:underline block py-2 md:py-0 text-lg md:text-base">Memberships</a>
+            </li>
+            <li><a href="{{url "/#bursaries"}}" class="hover:underline block py-2 md:py-0 text-lg md:text-base">Bursaries</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    {{#if showHeader}}
+    <header
+      class="bg-[url(/assets/hero.webp)] p-6 py-20 bg-cover text-white"
+    >
+      <div class="flex flex-col items-center gap-4 text-center mb-6">
+        <p class="text-4xl md:text-6xl text-shadow-md">
+          <span class="text-teal-400">Fostering</span> con-running talent<br
+            class="hidden md:block"
+          />
+          and <span class="text-teal-400">facilitating</span> connections
+        </p>
+        <p class="text-2xl mb-2">
+          4&ndash;6 December 2026 &middot; Lisbon, Portugal
+        </p>
+        <p>
+          <a
+            href="{{url "https://register.smofconlisbon.org/members/register"}}"
+            target="_blank"
+            class="bg-teal-600 px-6 py-2 md:px-8 md:py-3 rounded-md text-white hover:bg-teal-700 transition-colors text-xl md:text-2xl drop-shadow-md"
+            >Join</a
+          >
+        </p>
+      </div>
+    </header>
+    {{/if}}
+    <main id="main-content" class="bg-white flex-grow">
+      {{> @partial-block }}
+    </main>
+    <footer class="bg-teal-950 text-white min-h-[26lh]">
+      <div class="max-w-6xl mx-auto px-6 py-12">
+        <p>Contact us: <a href="mailto:info@smofconlisbon.org">info@smofconlisbon.org</a></p>
+        <h2 class="font-bold mt-6">Image credits</h2>
+        <ul class="flex gap-2 flex-col">
+          <li>Illustrations by <a href="https://storyset.com">Storyset</a></li>
+          <li>“<a href="https://www.flickr.com/photos/opalsson/3624468931" title="Colorful hillside neighborhood in Lisbon, Portugal in the morning sun">Colorful hillside neighborhood in Lisbon, Portugal in the morning sun</a>” by <a href="https://www.flickr.com/photos/opalsson/">O Palsson</a>, <a href="https://creativecommons.org/licenses/by/2.0/deed.en" rel="license noopener noreferrer">CC BY 2.0</a></li>
+          <li>“<a href="https://www.flickr.com/photos/wcowperthwaite/54256392012" title="12-22-2024 Lisbon, Portugal (227 of 322)">12-22-2024 Lisbon, Portugal (227 of 322)</a>” by <a href="https://www.flickr.com/photos/wcowperthwaite/">Wheeler Cowperthwaite</a>, <a href="https://creativecommons.org/licenses/by/2.0/deed.en" rel="license noopener noreferrer">CC BY 2.0</a></li>
+          <li>avatar by Bucky Clarke from <a href="https://thenounproject.com/browse/icons/term/avatar/" target="_blank" title="avatar Icons">Noun Project</a> (CC BY 3.0)</li>
+          <li>q&a by Gilbert Bages from <a href="https://thenounproject.com/browse/icons/term/qa/" target="_blank" title="q&a Icons">Noun Project</a> (CC BY 3.0)</li>
+        </ul>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
