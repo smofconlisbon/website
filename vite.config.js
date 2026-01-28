@@ -12,7 +12,6 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, "index.html"),
-        confirmation: resolve(__dirname, "confirmation.html"),
         "policies/code-of-conduct": resolve(
           __dirname,
           "policies/code-of-conduct.html",
