@@ -1,3 +1,4 @@
+import { globSync } from "node:fs";
 import { defineConfig } from "vite";
 import { resolve } from "path";
 import { imagetools } from "vite-imagetools";
@@ -6,26 +7,21 @@ import handlebars from "vite-plugin-handlebars";
 
 const base = process.env.BASE_URL || "/";
 
+const htmlFiles = globSync("**/*.html", { cwd: resolve(__dirname, "src") });
+const input = Object.fromEntries(
+  htmlFiles.map((file) => [
+    file.replace(/\.html$/, ""),
+    resolve(__dirname, "src", file),
+  ]),
+);
+
 export default defineConfig({
+  root: "src",
   base,
   build: {
-    rollupOptions: {
-      input: {
-        main: resolve(__dirname, "index.html"),
-        "policies/code-of-conduct": resolve(
-          __dirname,
-          "policies/code-of-conduct.html",
-        ),
-        "policies/disease-mitigation": resolve(
-          __dirname,
-          "policies/disease-mitigation.html",
-        ),
-        "policies/privacy-policy": resolve(
-          __dirname,
-          "policies/privacy-policy.html",
-        ),
-      },
-    },
+    outDir: resolve(__dirname, "dist"),
+    emptyOutDir: true,
+    rollupOptions: { input },
   },
   plugins: [
     imagetools({
@@ -43,7 +39,7 @@ export default defineConfig({
       multipass: true,
     }),
     handlebars({
-      partialDirectory: resolve(process.cwd(), "partials"),
+      partialDirectory: resolve(__dirname, "partials"),
       helpers: {
         url: (path) => {
           if (path.startsWith("/")) {

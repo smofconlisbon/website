@@ -4,7 +4,7 @@ The official website for SMOFcon 43.
 
 ## Requirements
 
-- **Node.js** 18.x or higher
+- **Node.js** 22.x or higher
 - **pnpm** 10.18.3 or higher
 
 ## Building locally

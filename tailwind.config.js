@@ -2,7 +2,11 @@
 import colors from "tailwindcss/colors";
 
 export default {
-  content: ["./index.html", "./**/*.{js,ts,jsx,tsx}"],
+  content: [
+    "./src/**/*.html",
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./partials/**/*.hbs",
+  ],
   theme: {
     colors: {
       white: colors.white,
