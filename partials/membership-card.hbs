@@ -29,7 +29,7 @@
         </span>
       {{/if}}
     </p>
-    <div class="flex flex-wrap gap-2 mb-6 justify-center">
+    <div class="flex flex-wrap gap-2 mb-4 justify-center">
       {{#if in_person}}
         <span
           class="bg-orange-200 text-orange-700 px-3 py-1 rounded-full text-sm"
@@ -47,6 +47,11 @@
           Social Only
         </span>
       {{/if}}
+    </div>
+    <div class="flex">
+        <span class="text-gray-500 mb-2">
+          {{#if rise}}{{rise}}{{else}}&nbsp;{{/if}}
+        </span>
     </div>
     <span
       class="bg-teal-600 px-6 py-2 rounded-md text-white group-hover:bg-teal-700 w-full transition-colors font-bold"
