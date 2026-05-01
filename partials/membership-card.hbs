@@ -48,8 +48,8 @@
         </span>
       {{/if}}
     </div>
-    <div class="flex">
-        <span class="text-gray-500 mb-2">
+    <div class="hidden group-has-[[data-rise]]/memberships:flex">
+        <span class="text-gray-500 mb-2"{{#if rise}} data-rise{{/if}}>
           {{#if rise}}{{rise}}{{else}}&nbsp;{{/if}}
         </span>
     </div>
