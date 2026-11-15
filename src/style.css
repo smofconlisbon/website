@@ -4,9 +4,11 @@ html {
   scroll-padding-top: 4.5rem;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
+@layer base {
+  img {
+    max-width: 100%;
+    height: auto;
+  }
 }
 
 main a[href]:not(.card):not(.button) {
