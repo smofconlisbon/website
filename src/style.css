@@ -1,5 +1,13 @@
 @import "tailwindcss";
 
+@theme {
+  --color-report-navy: #234a75;
+  --color-report-teal: #1b7c93;
+  --color-report-sky: #7fcde0;
+  --color-report-sand: #ebd68f;
+  --color-report-rust: #c8503a;
+}
+
 html {
   scroll-padding-top: 4.5rem;
 }

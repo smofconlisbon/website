@@ -1,0 +1,86 @@
+{{#*inline "stripes"}}
+  <div class="{{class}} flex h-[1.3cqw]" aria-hidden="true">
+    <div class="flex-1 bg-report-navy"></div>
+    <div class="flex-1 bg-report-teal"></div>
+    <div class="flex-1 bg-report-sky"></div>
+    <div class="flex-1 bg-report-sand"></div>
+    <div class="flex-1 bg-report-rust"></div>
+  </div>
+{{/inline}}
+<li class="@container">
+  <a
+    href="{{href}}"
+    target="_blank"
+    class="card group relative block aspect-square overflow-hidden bg-white font-[Lato,sans-serif] text-report-navy shadow-sm transition-shadow hover:shadow-lg focus-visible:outline-3 focus-visible:outline-offset-3 focus-visible:outline-report-teal"
+    aria-label="{{label}}"
+  >
+    <img
+      src="/assets/reports/star.png"
+      alt=""
+      class="absolute left-[62.1%] top-[34.4%] w-[51.4%] max-w-none"
+      width="600"
+      height="600"
+      loading="lazy"
+    />
+    <div class="absolute inset-0" aria-hidden="true">
+      <picture class="contents">
+        <source srcset="/assets/reports/smofcon43.avif" type="image/avif" />
+        <source srcset="/assets/reports/smofcon43.webp" type="image/webp" />
+        <img
+          src="/assets/reports/smofcon43.png"
+          alt=""
+          class="absolute left-[5.55%] top-[5.19%] h-[22.78%] w-[18.15%]"
+          width="243"
+          height="305"
+          loading="lazy"
+        />
+      </picture>
+      <div class="absolute left-[27.03%] top-[7.5%] flex h-[18.15%] w-[66.67%] flex-col justify-center bg-report-navy pl-[4.17cqw] leading-[1.1]">
+        <span class="text-[7.04cqw] font-black text-white">SMOFcon 43</span>
+        <span class="text-[3.76cqw] text-report-sky">Future Conventions &amp; Bids Q&amp;A</span>
+      </div>
+      {{> stripes class="absolute left-[5.55%] top-[31.3%] w-[88.15%]"}}
+    </div>
+    <span class="absolute left-[5.55%] top-[37%] whitespace-nowrap text-[3.57cqw] font-black uppercase tracking-[0.17em] text-report-teal">
+      {{category}}
+    </span>
+    <span class="absolute left-[5.55%] right-[5.93%] top-[45.4%] flex h-[37%] items-center gap-[0.25em] text-[10.32cqw]">
+      {{#if logo}}
+        <picture class="contents">
+          <source srcset="/assets/reports/{{logo}}.avif" type="image/avif" />
+          <source srcset="/assets/reports/{{logo}}.webp" type="image/webp" />
+          <img
+            src="/assets/reports/{{logo}}.png"
+            alt="{{alt}}"
+            class="absolute left-0 top-1/2 h-auto max-h-full w-auto max-w-full -translate-y-1/2"
+            width="{{width}}"
+            height="{{height}}"
+            {{#if logoMaxWidth}}style="max-width: {{logoMaxWidth}}"{{/if}}
+            loading="lazy"
+          />
+        </picture>
+      {{else}}
+        <span class="whitespace-nowrap font-black uppercase">{{name}}</span>
+        <span class="whitespace-nowrap font-light uppercase text-report-rust">{{year}}</span>
+      {{/if}}
+    </span>
+    <span class="absolute left-[5.55%] top-[85.56%] flex origin-left transition-transform group-hover:scale-105 group-focus-visible:scale-105 h-[7.78cqw] items-center gap-[2.41cqw] text-[3.76cqw] font-black uppercase tracking-[0.1em]">
+      <svg class="size-[7.78cqw]" viewBox="0 0 40 40" aria-hidden="true">
+        <circle cx="20" cy="20" r="20" fill="currentColor" />
+        <path
+          d="M14 20h12m-5.5-5.5L26 20l-5.5 5"
+          fill="none"
+          stroke="#fff"
+          stroke-width="2.3"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        />
+      </svg>
+      Read the report
+    </span>
+    <span class="absolute right-[6.52%] top-[86.94%] flex h-[5cqw] w-[9.88cqw] items-center justify-center rounded-[0.74cqw] border-[0.37cqw] border-report-navy text-[2.8cqw] font-black tracking-[0.05em]">
+      PDF
+    </span>
+    {{> stripes class="absolute inset-x-0 bottom-0"}}
+  </a>
+</li>

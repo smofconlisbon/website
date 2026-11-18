@@ -18,6 +18,9 @@ const input = Object.fromEntries(
 export default defineConfig({
   root: "src",
   base,
+  server: {
+    allowedHosts: [".ngrok-free.app"],
+  },
   build: {
     outDir: resolve(__dirname, "dist"),
     emptyOutDir: true,
